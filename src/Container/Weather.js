@@ -22,7 +22,7 @@ class Weather extends React.Component {
     }
   }
   giveMeTheData(searchValue) {
-    const url = ` http://api.weatherapi.com/v1/forecast.json?&days=5&key=28cfadb8a88545a49ce195615202309&q=${searchValue}`;
+    const url = ` https://api.weatherapi.com/v1/forecast.json?&days=5&key=28cfadb8a88545a49ce195615202309&q=${searchValue}`;
     const promise = fetch(url);
     promise
       .then(response => {
